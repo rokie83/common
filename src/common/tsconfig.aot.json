@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./../../dist",
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "rootDir": ".",
+        "lib": [
+            "es2016",
+            "dom"
+        ]
+    },
+    "angularCompilerOptions": {
+        "skipTemplateCodegen": true,
+        "debug": true
+    }
+}

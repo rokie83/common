@@ -1,0 +1,35 @@
+@import "../../../../node_modules/@bexio/design/variables/color";
+$spinner-margin: 15vh auto;
+
+
+@-webkit-keyframes bx-loadinganimation {
+    100% {
+        transform: rotate(360deg);
+
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes bx-loadinganimation {
+    100% {
+        transform: rotate(360deg);
+
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+:host {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    animation: bx-loadinganimation 0.7s cubic-bezier(0.5, 0.7, 0.6, 0.5) infinite;
+    margin: $spinner-margin;
+    border: 6px solid $color-secondary-blue-light;
+    border-bottom: 6px solid transparent;
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+
+    -webkit-animation: bx-loadinganimation 0.7s cubic-bezier(0.5, 0.7, 0.6, 0.5) infinite;
+}

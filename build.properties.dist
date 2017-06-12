@@ -1,0 +1,6 @@
+# Path to the installer binary.
+# Yarn an npm are still compatible. Both can be used but yarn is prefered.
+install=yarn
+
+# Path to the npm binary.
+npm=npm

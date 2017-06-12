@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Manual Entries Frontend" default="build">
+    <property file="build.properties"/>
+    <property file="build.properties.dist"/>
+
+    <target name="clean"
+            description="Removes installed dependencies and build artifacts.">
+        <exec executable="rm" failonerror="true" taskname="delete">
+            <arg value="-rf" />
+            <arg value="${basedir}/node_modules" />
+            <arg value="${basedir}/dist" />
+        </exec>
+    </target>
+
+    <target name="build"
+            depends="install,lint,build-dist"
+            description="Installs all required dependencies and builds the application."/>
+
+    <target name="build-ci"
+            depends="clean,build,test"
+            description="Build target for the CI server" />
+
+    <target name="install"
+            description="Installs the dependencies.">
+        <exec executable="${install}" failonerror="true" taskname="install">
+            <arg value="install" />
+        </exec>
+    </target>
+
+    <target name="lint"
+            depends="lint-js, lint-scss"
+            description="Linting for JavaScript and SCSS." />
+
+    <target name="lint-js">
+        <exec executable="${npm}" failonerror="true" taskname="lint-js">
+            <arg value="run" />
+            <arg value="lint" />
+        </exec>
+    </target>
+
+    <target name="lint-scss">
+        <exec executable="${npm}" failonerror="true" taskname="lint-scss">
+            <arg value="run" />
+            <arg value="scss-lint" />
+        </exec>
+    </target>
+
+    <target name="build-dist"
+            depends="install"
+            description="Installs the dependencies.">
+        <exec executable="${npm}" failonerror="true" taskname="build">
+            <arg value="run" />
+            <arg value="build" />
+        </exec>
+    </target>
+
+    <target name="test"
+            description="Runs the tests.">
+        <exec executable="${npm}" failonerror="true" taskname="test">
+            <arg value="run" />
+            <arg value="test-ci" />
+        </exec>
+    </target>
+</project>

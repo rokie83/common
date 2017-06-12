@@ -1,0 +1,12 @@
+Language:        JavaScript
+BasedOnStyle:    Chromium
+ColumnLimit:     100
+
+IndentWidth:             4
+ContinuationIndentWidth: 4
+MaxEmptyLinesToKeep    : 2
+
+AllowShortBlocksOnASingleLine:              false
+AllowShortIfStatementsOnASingleLine:        false
+AllowShortLoopsOnASingleLine:               false
+AllowShortFunctionsOnASingleLine:           Empty

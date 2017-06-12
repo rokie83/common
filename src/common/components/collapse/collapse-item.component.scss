@@ -1,0 +1,71 @@
+@import "../../../../node_modules/@bexio/design/variables/color";
+@import "../../../../node_modules/@bexio/design/placeholders/placeholders";
+
+//component variables
+$material-standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
+$collapse-item-title-padding: 1.4rem 2.4rem;
+$collapse-item-title-margin: 0;
+$collapse-item-content-padding: 0;
+
+//component styles
+.bx-collapse-item {
+    border-bottom: 1px solid $color-hr;
+}
+
+:host-context(.ie) {
+    .bx-collapse-item-content {
+        transition: none;
+    }
+}
+
+.bx-collapse-item-title {
+    @extend %typography-dark-secondary;
+    display: block;
+    margin: $collapse-item-title-margin;
+    background: $color-table-hover;
+    cursor: pointer;
+    padding: $collapse-item-title-padding;
+    text-decoration: none;
+    font-size: $typo-font-base-size;
+    user-select: none;
+
+    &.is-open {
+        @extend %typography-dark-primary;
+        background: none;
+    }
+}
+
+.bx-collapse-item-content {
+    display: block;
+    transition: height 0.15s $material-standard-curve;
+    padding: $collapse-item-content-padding;
+    overflow: hidden;
+}
+
+:host {
+    &.inverse-border .bx-collapse-item {
+        border-top: 1px solid $color-hr;
+        border-bottom: none;
+    }
+
+    .bx-collapse-item-label {
+        display: block;
+    }
+
+    .bx-collapse-item-input {
+        width: 12px;
+    }
+}
+
+.bx-collapse-item-title-icon {
+    float: right;
+    transition: transform 0.15s $material-standard-curve;
+    opacity: 0.12;
+    margin-top: 5px;
+    width: 12px;
+
+    &.is-open {
+        transform: rotateZ(180deg);
+        opacity: 0.54;
+    }
+}

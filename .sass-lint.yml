@@ -1,0 +1,113 @@
+files:
+  include: 'src/**/*.scss'
+rules:
+  no-vendor-prefixes: 0
+  attribute-quotes: 1
+  border-zero:
+    - 1
+    - convention: 'none'
+  brace-style:
+    - 1
+    - style: '1tbs'
+      allow-single-line: false
+  class-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  clean-import-paths:
+    - 2
+    - filename-extention: false
+      leading-underscore: false
+  empty-args:
+    - 1
+    - include: true
+  empty-line-between-blocks:
+    - 1
+    - include: true
+      allow-single-line-rulesets: false
+  extends-before-declarations: 1
+  extends-before-mixins: 1
+  final-newline: 1
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  hex-length:
+    - 1
+    - style: long
+  hex-notation:
+    - 1
+    - style: lowercase
+  indentation:
+    - 1
+    - size: 4
+  leading-zero:
+    - 1
+    - include: true
+  mixin-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  mixins-before-declarations: 1
+  nesting-depth:
+    - 2
+    - max-depth: 3
+  no-attribute-selectors: 0
+  no-color-keywords: 2
+  no-combinators: 0
+  no-css-comments: 2
+  no-debug: 2
+  no-empty-rulesets: 2
+  no-extends: 0
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties:
+    - 2
+    - extra-properties:
+        - ':host'
+  no-qualifying-elements:
+    - 1
+    - allow-element-with-attribute: true
+      allow-element-with-class: false
+      allow-element-with-id: false
+  no-trailing-whitespace: 2
+  no-trailing-zero: 0
+  no-transition-all: 2
+  no-universal-selectors: 0
+  no-url-domains: 0
+  no-url-protocols: 0
+  no-warn: 2
+  one-declaration-per-line: 2
+  placeholder-in-extend: 2
+  placeholder-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  property-sort-order:
+    - 1
+    - order: 'concentric'
+      ignore-custom-properties: false
+  property-units:
+    global: ['px', 'rem', 'mm', 'pt', '%', 'in', 'vh', 'vw']
+  pseudo-element: 2
+  quotes:
+    - 1
+    - style: double
+  single-line-per-selector: 1
+  space-after-colon: 1
+  space-after-comma: 1
+  space-around-operator: 1
+  space-before-brace: 1
+  space-before-colon: 0
+  space-between-parens: 0
+  trailing-semicolon: 1
+  url-quotes: 1
+  variable-for-property:
+    - 0
+    - properties: []
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  zero-unit: 1

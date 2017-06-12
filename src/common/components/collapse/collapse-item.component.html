@@ -1,0 +1,8 @@
+<section class="bx-collapse-item">
+    <div aria-controls="accordion" (click)="toggle()" [class.is-open]="isVisible" class="bx-collapse-item-title">{{title}}
+        <img class="bx-collapse-item-title-icon" [class.is-open]="!isVisible" aria-hidden="true" src="assets/icons/chevron-arrow-up.svg">
+    </div>
+    <div #collapse [style.height.px]="height" class="bx-collapse-item-content" [class.is-open]="isVisible">
+        <ng-content></ng-content>
+    </div>
+</section>
