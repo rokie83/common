@@ -212,18 +212,15 @@ gulp.task('release', () => {
 });
 
 
-gulp.task('test', () => {
+gulp.task('build', () => {
     runSequence(
         'validate',
-        'update-packagejson',
         'clean',
         'ngc',
         'copy-files',
         'copy-html',
         'compile-scss-copy-css',
-        'inline-resources',
-        'write-changelog',
-        'finished'
+        'inline-resources'
     )
 });
 

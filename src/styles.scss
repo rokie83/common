@@ -23,9 +23,3 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 @include angular-material-theme($app-theme);
 
 // import bexio layout relevant modules
-
-@import "/flexgrid/flexgrid";
-@import "/material-custom/md-override";
-@import "/design/links/links";
-@import "/design/table/table";
-@import "/design/dialog/dialog";

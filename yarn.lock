@@ -120,9 +120,9 @@
   dependencies:
     tsickle "^0.21.0"
 
-"@bexio/design@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@bexio/design/-/design-0.0.6.tgz#9f49d518cc23b84897ec1b2b888cfde2be54bcd4"
+"@bexio/design@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@bexio/design/-/design-0.0.7.tgz#9513a978f81f378089d5289198728b691db0c42e"
 
 "@ngtools/json-schema@1.0.9":
   version "1.0.9"

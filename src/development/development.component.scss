@@ -1,0 +1,23 @@
+@import "~@bexio/design/variables/variables";
+@import "~@bexio/design/placeholders/typography.placeholder";
+
+$app-container-text-color: $color-character-primary-light;
+$app-container-font-family: $typo-font-base-family;
+$app-container-font-size: $typo-font-base-size;
+$app-container-font-weight: $typo-font-base-weight;
+$app-container-line-height: $typo-font-base-line-height;
+$app-container-margin: 0 auto;
+$app-container-padding: 0 10px 66px;
+
+.angular-app-container {
+    display: block;
+    margin: $app-container-margin;
+    padding: $app-container-padding;
+    width: 100%;
+    overflow: visible;
+    line-height: $app-container-line-height;
+    color: $app-container-text-color;
+    font-family: $app-container-font-family;
+    font-size: $app-container-font-size;
+    font-weight: $app-container-font-weight;
+}
