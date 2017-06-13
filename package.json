@@ -21,8 +21,8 @@
         }
     ],
     "repository": {
-        "type": "bitbucket",
-        "url": "https://bitbucket.org/easysys/ng_bexio_components"
+        "type": "git",
+        "url": "https://github.com/rokie83/common"
     },
     "keywords": [
         "bexio",

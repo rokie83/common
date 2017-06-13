@@ -5,8 +5,8 @@
     "author": "bexio AG <npm@bexio.com> (https://www.bexio.com)",
     "license": "MIT",
     "repository": {
-        "type": "bitbucket",
-        "url": "https://bitbucket.org/easysys/ng_bexio_components"
+        "type": "git",
+        "url": "https://github.com/rokie83/common"
     },
     "dependencies": {
         "@bexio/design": "^0.0.7",
